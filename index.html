@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <section class="calculator">
+      <div class="container">
+        <div class="item-wrapper">
+          <h1 class="title">Simple Calculator</h1>
+          <p class="description">
+            This is a simple calculator that can get values
+            (addition/substraction/multiply/divide) from two numbers
+          </p>
+          <div class="input-number">
+            <input
+              id="firstNumber"
+              class="number"
+              type="number"
+              placeholder="first number"
+            />
+            <input
+              id="secondNumber"
+              class="number"
+              type="number"
+              placeholder="second number"
+            />
+          </div>
+          <div class="input-button">
+            <button class="btn" onclick="mul()">x</button>
+            <button class="btn" onclick="div()">/</button>
+            <button class="btn" onclick="add()">+</button>
+            <button class="btn" onclick="sub()">-</button>
+          </div>
+          <h3 class="result-title">Result</h3>
+          <p id="result"></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
